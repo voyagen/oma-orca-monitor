@@ -1,0 +1,7 @@
+singleton Backend 1.0 Backend.qml
+PlainText 1.0 PlainText.qml
+AgentIcon 1.0 AgentIcon.qml
+StatusIndicator 1.0 StatusIndicator.qml
+ThemedIcon 1.0 ThemedIcon.qml
+BarStatus 1.0 BarStatus.qml
+MonitorContent 1.0 MonitorContent.qml

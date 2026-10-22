@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "voyagen.oma-orca-monitor",
+  "name": "Orca Monitor",
+  "version": "0.1.0",
+  "author": "Voyagen",
+  "license": "MIT",
+  "description": "Orca agent sessions in the Omarchy bar: live status for every project, workspace and agent, with one click to jump to its terminal.",
+  "preview": "preview.png",
+  "homepage": "https://github.com/voyagen/oma-orca-monitor",
+  "repository": "https://github.com/voyagen/oma-orca-monitor",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Orca Monitor",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "description": "Orca agent status in the bar; open a panel of projects, workspaces and agents.",
+    "aliases": [
+      "orca",
+      "agents"
+    ],
+    "defaults": {
+      "refreshIntervalSec": 3
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 2,
+        "max": 60,
+        "step": 1,
+        "defaultValue": 3,
+        "description": "How often Orca is polled while the plugin is enabled. Failed reads back off to at least 10 seconds."
+      }
+    ]
+  },
+  "keywords": [
+    "orca",
+    "agents",
+    "ai",
+    "coding-agents",
+    "monitor",
+    "terminal"
+  ]
+}
