@@ -2,7 +2,7 @@
 
 [Orca](https://github.com/stablyai/orca) agent sessions in the [Omarchy](https://omarchy.org) bar, with one click to jump to any of them.
 
-![Orca Monitor panel](preview.png)
+![Orca Monitor](preview.png)
 
 ## Install
 
@@ -28,6 +28,8 @@ The bar shows the Orca logo and a status icon:
 | Question mark | An agent needs your input |
 | Interrupted / unknown | Orca reported an interrupted or unrecognised state |
 | Muted dot | Orca is unavailable, or nothing is running |
+
+![Orca Monitor panel](docs/panel.png)
 
 Click the logo to open the panel: projects, workspace cards and always-visible agent rows, newest activity first. Click a card to open its waiting agent, or otherwise its most recently active one, in Orca. The status icon jumps straight to the most recent waiting agent.
 
