@@ -52,9 +52,6 @@ Ui.Panel {
         }
         Item {
             id: hoverObserver
-            // Observe above replacement-bar drag overlays without intercepting clicks.
-            parent: root.Window.window ? root.Window.window.contentItem : barContents
-            z: 10001
             anchors.fill: parent
             readonly property point localPoint: root.mapFromItem(hoverObserver, groupHover.point.position.x, groupHover.point.position.y)
             HoverHandler {
